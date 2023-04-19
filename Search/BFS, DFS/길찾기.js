@@ -28,6 +28,7 @@ const bfs = (sy, sx) => {
   check[sy][sx] = true;
   queue.push([sy, sx]);
   while (queue.length) {
+    h;
     const [y, x] = queue.shift();
     // 목적지를 찾은 경우, dfs와 달리 바로 종료됨 -> 최단거리 찾기 가능
     if (adj[y][x] === 1) return;
